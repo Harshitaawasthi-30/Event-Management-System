@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>Event Management System</h1>
+
+    <!-- Login Form -->
+    <div id="loginSection">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username" required />
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required />
+        
+        <button type="submit">
+        <a href="admin.html"></a>
+        <a href="user.html"></a>
+        <a href="vendor.html"></a>Login</button>
+        
+      </form>
+    </div>
+
+    <!-- Event Form (Only Visible to Admin/Vendor) -->
+    <div id="eventFormSection" style="display: none;">
+      <h2>Add Event</h2>
+      <form id="eventForm">
+        <input type="text" id="title" placeholder="Event Title" required />
+        <input type="text" id="date" placeholder="Event Date" required />
+        <input type="text" id="location" placeholder="Event Location" required />
+        <textarea id="description" placeholder="Event Description" required></textarea>
+        <button type="submit">Add Event</button>
+      </form>
+    </div>
+
+    <!-- Display Events Section (Visible to All Roles) -->
+    <h2>All Events</h2>
+    <div id="events"></div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #428ac1;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+  
+  nav a:hover {
+    background-color: #96b1cf;
+  }
+  
+  .user-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-content h2 {
+    margin-top: 0;
+  }
+  
+  #cart, #guest-list {
+    margin-bottom: 20px;
+  }
+  
+  /* Add styling for cart items and guest list items */
+  .cart-item, .guest-list-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
